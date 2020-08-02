@@ -19,6 +19,9 @@ def index(request):
 def about(request):
     return render(request,"todo_app/about.html")
 
+def deneme(request):
+    return render(request,"todo_app/deneme.html")    
+
 def create(request):
     if request.method == "POST":
         form = ListForm(request.POST or None)
